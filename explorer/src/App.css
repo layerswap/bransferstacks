@@ -1,0 +1,350 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+html {
+  width: 100%;
+  background-color: #000;
+}
+
+u {
+  border-bottom: 2px dotted;
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden !important;
+  background-color: #000;
+}
+
+  body.show-spinner > main {
+      overflow: hidden !important;
+  }
+
+  /* Hide everything under body tag */
+  body.show-spinner > * {
+      opacity: 0;
+  }
+
+  /* Spinner */
+  body.show-spinner::after {
+      content: " ";
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border: 2px solid rgba(0, 0, 0, 0.2);
+      border-radius: 50%;
+      border-top-color: rgba(0, 0, 0, 0.3);
+      animation: spin 1s ease-in-out infinite;
+      -webkit-animation: spin 1s ease-in-out infinite;
+      left: calc(50% - 15px);
+      top: calc(50% - 15px);
+      position: fixed;
+      z-index: 1;
+  }
+
+@keyframes spin {
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+.thumbnail-exchange-logo {
+  margin: 1rem !important;
+}
+
+.validation-summary-errors ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.form-control:disabled, .form-control[readonly] {
+  background-color: inherit;
+  opacity: 1;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: background;
+  background-color: transparent;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+.thumbnail-currancy-logo {
+  max-height: 30px;
+}
+
+.icon-big {
+  font-size: 38px;
+}
+
+.bran-link {
+  color: #ad7140
+}
+
+.landing-page .semi-rounded {
+  padding: 2rem;
+  border-radius: 10rem !important;
+}
+
+@media (max-width: 575px) {
+  .top-right-button-container {
+      float: right;
+      display: flex;
+      justify-content: space-between;
+  }
+}
+
+@media (max-width: 767px) {
+  .landing-page .feature-image-left, .landing-page .feature-image-right {
+      margin-left: 0;
+      transform: translateX(0);
+      max-width: 115%;
+      float: initial;
+  }
+
+  .landing-page .mobile-hero {
+      margin-left: 0;
+      transform: translateX(0);
+  }
+}
+
+.landing-page .semi-rounded {
+  padding: 1rem;
+}
+
+.modal-backdrop {
+  opacity: 0.35 !important;
+}
+
+#qrCode img {
+  display: inline-block !important;
+  border: 10px #fff solid;
+}
+
+.fixed-background {
+  /* background: url(/img/bg.png) no-repeat center center fixed; */
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.logo-single {
+  width: 150px !important;
+  /* background: url(/logos/white.svg) no-repeat !important; */
+}
+
+.icon-3d {
+  padding: 10px;
+  color: rgb(58, 58, 58);
+}
+
+  .icon-3d:hover {
+      -webkit-animation: icon3d 200ms infinite;
+      animation: icon3d 200ms infinite;
+  }
+
+@keyframes icon3d {
+  0% {
+      text-shadow: 5px 4px #6fb327, -5px -6px #ffffff;
+  }
+
+  25% {
+      text-shadow: -5px -6px #6fb327, 5px 4px #ffffff;
+  }
+
+  50% {
+      text-shadow: 5px -4px #6fb327, -8px 4px #ffffff;
+  }
+
+  75% {
+      text-shadow: -8px -4px #6fb327, -5px -4px #ffffff;
+  }
+
+  100% {
+      text-shadow: -5px 0 #6fb327, 5px -4px #ffffff;
+  }
+}
+
+.row.vertical-divider {
+  overflow: hidden;
+}
+
+  .row.vertical-divider > div[class^="col-"] {
+      text-align: center;
+      padding-bottom: 100px;
+      margin-bottom: -100px;
+      border-left: 0.5px solid #6fb327;
+      border-right: 0.5px solid #6fb327;
+  }
+
+  .row.vertical-divider div[class^="col-"]:first-child {
+      border-left: none;
+  }
+
+  .row.vertical-divider div[class^="col-"]:last-child {
+      border-right: none;
+  }
+
+
+.countdown {
+  /* text-align: center; */
+  border: 5px solid #6fb327;
+  border-radius: 25px;
+  display: inline;
+  padding: 5px;
+  color: #6fb327;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.semi-lead {
+  font-size: 1.2rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: rgb(0, 0, 0) !important;
+}
+
+.btn {
+  font-weight: bold;
+}
+
+.form-control.line {
+  border-bottom: 3px solid #424242;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background-color: transparent !important;
+}
+
+
+  .form-control.line:focus {
+      border-color: #00df9a;
+  }
+
+.form-control-lg {
+  font-size: 1rem;
+}
+
+.auth-title {
+  font-size: 2.7rem;
+}
+
+.jconfirm.jconfirm-white .jconfirm-bg, .jconfirm.jconfirm-light .jconfirm-bg {
+  background-color: #000;
+  opacity: .35;
+}
+
+.jconfirm.jconfirm-white .jconfirm-box, .jconfirm.jconfirm-light .jconfirm-box {
+  padding: 25px;
+  border-radius: 0.1rem;
+  background: #212220;
+}
+
+.jconfirm-buttons {
+  padding: 0px;
+}
+
+  .jconfirm-buttons button {
+      border-radius: 50px !important;
+      border: 1px solid transparent;
+  }
+
+  .jconfirm-buttons .btn.btn-outline-primary {
+      border: 1px solid !important;
+  }
+
+.rounded .alert {
+  border-radius: 0.75rem;
+}
+
+.spinner-border {
+  width: 1rem;
+  height: 1rem;
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+      column-count: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-columns {
+      column-count: 3;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-columns {
+      column-count: 4;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-columns {
+      column-count: 5;
+  }
+}
