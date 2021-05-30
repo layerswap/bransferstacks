@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ReactDOM from "react-dom";
 import DataTable, { createTheme } from "react-data-table-component";
 import { getAll } from "../../services/transactions"
 

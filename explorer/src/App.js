@@ -1,4 +1,3 @@
-import logo from './logos/white.svg'
 import TransactionsList from "./content/transactions/List"
 import "./vendor/bootstrap.min.css"
 import "./vendor/dataTables.bootstrap4.min.css"
